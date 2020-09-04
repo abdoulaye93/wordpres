@@ -19,7 +19,7 @@
  *
  * @package WordPress
  */
-if (isset($_ENV["DATABASE_URL1"]))
+if (isset($_ENV["DATABASE_URL"]))
 {
     define('DB_NAME', $_ENV["DB_NAME"]);
     define('DB_USER', $_ENV["DB_USER"]);
