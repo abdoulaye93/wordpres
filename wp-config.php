@@ -19,22 +19,32 @@
  *
  * @package WordPress
  */
-
-// ** Réglages MySQL - Votre hébergeur doit vous fournir ces informations. ** //
-/** Nom de la base de données de WordPress. */
-define( 'DB_NAME', 'plugin' );
-
-/** Utilisateur de la base de données MySQL. */
-define( 'DB_USER', 'root' );
-
-/** Mot de passe de la base de données MySQL. */
-define( 'DB_PASSWORD', '' );
-
-/** Adresse de l’hébergement MySQL. */
-define( 'DB_HOST', 'localhost' );
+if (isset($_ENV["DATABASE_URL"]))
+{
+    define('DB_NAME', $_ENV["DB_NAME"]);
+    define('DB_USER', $_ENV["DB_USER"]);
+    define('DB_PASSWORD', $_ENV["DB_PASSWORD"]);
+    define('DB_HOST', $_ENV["DB_HOST"]);
+}
+else
+{
+    die("Can't determine database settings from DATABASE_URL\n");
+}
+//// ** Réglages MySQL - Votre hébergeur doit vous fournir ces informations. ** //
+///** Nom de la base de données de WordPress. */
+//define( 'DB_NAME', 'dc5m33id89s0e3' );
+//
+///** Utilisateur de la base de données MySQL. */
+//define( 'DB_USER', 'jpucrtauaaywcz' );
+//
+///** Mot de passe de la base de données MySQL. */
+//define( 'DB_PASSWORD', '72967cac3be0b3c54782e8f3400f5b9ee6422dc69956a949c4e6134aa4ebe294' );
+//
+///** Adresse de l’hébergement MySQL. */
+//define( 'DB_HOST', 'localhost' );
 
 /** Jeu de caractères à utiliser par la base de données lors de la création des tables. */
-define( 'DB_CHARSET', 'utf8mb4' );
+define( 'DB_CHARSET', 'utf8' );
 
 /**
  * Type de collation de la base de données.
@@ -53,14 +63,14 @@ define( 'DB_COLLATE', '' );
  *
  * @since 2.6.0
  */
-define( 'AUTH_KEY',         'GVcz+TinuDAaHlE7!>ddQ_2mJK*([~.7<y`YM`J }BxW`fd3nM/OrWG*z9CZv3A9' );
-define( 'SECURE_AUTH_KEY',  '.w9F5Q$#-1Y`5!p]=3i,1g8KfRQe9bS%HP$`(t?dcgN1j ]p1tM=N(>e%$B+XsRL' );
-define( 'LOGGED_IN_KEY',    '~[$iHDlk#k?3mYn(kz7WaQGWxym|Adzsw1j}7@]x:9:Mm_)c#6*E:JxRZc-cqQ<N' );
-define( 'NONCE_KEY',        'lL)~q/+0gZ}@(X6I4)e 8D f.+:[Yb89PYyK_nAi^ m3Omr{pE30/1Q.~-t<w.nk' );
-define( 'AUTH_SALT',        'b;4*IQBY/ReS@fIF(Z(VUNL~5l3M!g`c76OuDI+*r+C29O7O5,o=ewr?Q!Fx-1&j' );
-define( 'SECURE_AUTH_SALT', '!!Gvq!d%P=rH w?lbVbDJ,r(I]l@F9V2{59~Q#/C OK5n:JC@[3zWm2&&-y7u,d|' );
-define( 'LOGGED_IN_SALT',   '&B_,A*8k QSBnB{.3?he;O~->Tz*aKMI)ZH]9[,00i]RvQ5Cw.K&C!eDqv)MPL.=' );
-define( 'NONCE_SALT',       '3aWOCmX!4{Xm5 +3RPbP7]QBH8Q:!6X@!oYh5fcH4HFoAmOOYg;0#u),l-:kyoH5' );
+define( 'AUTH_KEY',         'mettez une phrase unique ici' );
+define( 'SECURE_AUTH_KEY',  'mettez une phrase unique ici' );
+define( 'LOGGED_IN_KEY',    'mettez une phrase unique ici' );
+define( 'NONCE_KEY',        'mettez une phrase unique ici' );
+define( 'AUTH_SALT',        'mettez une phrase unique ici' );
+define( 'SECURE_AUTH_SALT', 'mettez une phrase unique ici' );
+define( 'LOGGED_IN_SALT',   'mettez une phrase unique ici' );
+define( 'NONCE_SALT',       'mettez une phrase unique ici' );
 /**#@-*/
 
 /**
@@ -92,21 +102,7 @@ define( 'WP_DEBUG', false );
 
 /** Chemin absolu vers le dossier de WordPress. */
 if ( ! defined( 'ABSPATH' ) )
-  define( 'ABSPATH', dirname( __FILE__ ) . '/' );
-
-
-if (isset($_ENV["DATABASE_URL"]))
-{
-//    $db = parse_url($_ENV["DATABASE_URL"]);
-    define('DB_NAME', 'dc5m33id89s0e3');
-    define('DB_USER', 'jpucrtauaaywcz');
-    define('DB_PASSWORD', '72967cac3be0b3c54782e8f3400f5b9ee6422dc69956a949c4e6134aa4ebe294');
-    define('DB_HOST', 'ec2-52-200-111-186.compute-1.amazonaws.com');
-}
-else
-{
-    die("Can't determine database settings from DATABASE_URL\n");
-}
+    define( 'ABSPATH', dirname( __FILE__ ) . '/' );
 
 /** Réglage des variables de WordPress et de ses fichiers inclus. */
 require_once( ABSPATH . 'wp-settings.php' );
