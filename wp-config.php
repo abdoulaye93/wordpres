@@ -95,17 +95,12 @@ if ( ! defined( 'ABSPATH' ) )
   define( 'ABSPATH', dirname( __FILE__ ) . '/' );
 
 
-if(isset($_ENV[`CLEARDB_DATABASE_URL`])) {
-    $db = parse_url($_ENV[`CLEARDB_DATABASE_URL`]);
-    define(‘DB_NAME’, trim($db[`path`],`/`));
-    define(‘DB_USER’, $db[`user`]);
-    define(‘DB_PASSWORD’, $db[`pass`]);
-    define(‘DB_HOST’, $db[`host`]);
-    define(‘DB_CHARSET’, ‘utf8’);
-    define(‘DB_COLLATE’, ‘’);
-} else {
-    die('No Database credentials!');
-}
+define(‘DB_USER’, 'npbpgjwpufpxcg');
+define(‘DB_PASSWORD’, 'c069504e884d4557a9b7404606c55f59f1840c68f8beca4e7f899f9519d8839d');
+define(‘DB_HOST’, 'ec2-54-175-77-250.compute-1.amazonaws.com');
+define(‘DB_PORT’, 'ec2-54-175-77-250.compute-1.amazonaws.com');
+define(‘DB_CHARSET’, ‘utf8’);
+define(‘DB_COLLATE’, ‘’);
 
 /** Réglage des variables de WordPress et de ses fichiers inclus. */
 require_once( ABSPATH . 'wp-settings.php' );
