@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e0fcd95b-7e5b-49db-8c9c-ad7393f04f38" name="Default Changelist" comment="" />
+    <list default="true" id="e0fcd95b-7e5b-49db-8c9c-ad7393f04f38" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-config.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-config.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +93,7 @@
       <workItem from="1597072783955" duration="599000" />
       <workItem from="1597766742229" duration="599000" />
       <workItem from="1598631465788" duration="599000" />
-      <workItem from="1599215429689" duration="1590000" />
+      <workItem from="1599215429689" duration="1799000" />
     </task>
     <servers />
   </component>

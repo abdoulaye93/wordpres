@@ -97,11 +97,11 @@ if ( ! defined( 'ABSPATH' ) )
 
 if (isset($_ENV["DATABASE_URL"]))
 {
-    $db = parse_url($_ENV["DATABASE_URL"]);
-    define('DB_NAME', trim($db["path"],"/"));
-    define('DB_USER', $db["user"]);
-    define('DB_PASSWORD', $db["pass"]);
-    define('DB_HOST', $db["host"]);
+//    $db = parse_url($_ENV["DATABASE_URL"]);
+    define('DB_NAME', 'dc5m33id89s0e3');
+    define('DB_USER', 'jpucrtauaaywcz');
+    define('DB_PASSWORD', '72967cac3be0b3c54782e8f3400f5b9ee6422dc69956a949c4e6134aa4ebe294');
+    define('DB_HOST', 'ec2-52-200-111-186.compute-1.amazonaws.com');
 }
 else
 {
