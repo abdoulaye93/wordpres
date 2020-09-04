@@ -1,0 +1,265 @@
+/* Extra small devices (phones, less than 768px) */
+@media (max-width : 766px) {
+	.intro h1 {
+		font-size: 40px;
+		line-height: 40px;
+	}
+
+	.social-icons ul{
+		margin-left: 0;
+	}
+
+	.social-icons li{
+		padding:0;
+	}
+
+	.social-icons a i{
+		margin:0 5px;
+	}
+
+	.mouse-icon{
+		display:none;
+	}
+
+	.navbar-custom .navbar-brand,
+	.navbar-custom .navbar-nav > li > a,
+	.navbar-custom .navbar-nav .dropdown-menu > li > a {
+		padding:10px 15px;
+	}
+
+	.navbar-custom .dropdown-menu{
+		margin-left: 20px;
+	}
+
+
+	/*resume*/
+	.resume:before,
+	.resume:after{
+		left:1px;
+	}
+
+	/*blog section*/
+	.blog-post-wrapper {
+		margin-bottom: 40px;
+	}
+
+	.center-xs {
+		text-align: center;
+	}
+
+	.section-padding {
+		padding: 60px 0 60px;
+	}
+
+	/**/
+	.container > .navbar-header{margin-left: 0;}
+
+	/* Submenu Toggle */
+	#menu {
+		max-height: 400px;
+		overflow-y: auto;
+	}
+	.sub-menu .dropdown-menu, .navbar-custom .dropdown-menu {
+	    margin: 0;
+	    position: relative;
+	    float: none;
+	    display: none;
+	    left: 0;
+	    border-bottom: 0;
+	}
+	.navbar-custom .dropdown-menu {
+	    border-color: transparent !important;
+	}
+	#menu li {
+ 		border-top: 1px solid #ccc;
+	}
+	span.has-dropdown-menu {
+	    position: absolute;
+	    top: 0;
+	    right: 0;
+	    width: 50px;
+	    height: 40px;
+	    text-align: center;
+	    line-height: 38px;
+	    display: block;
+	    z-index: 1;
+	}
+
+}
+
+@media (max-width : 992px) {
+
+	.timeline > li .timeline-content:hover {
+		background: transparent !important;
+	}
+
+	.timeline::before, .timeline::after{
+		display: none !important;
+	}
+
+	.resume-section .resume::after, .resume-section .resume::before{
+		display: none !important;
+	}
+
+	.timeline > li::before, .timeline > li::after {
+		display: none !important;
+	}
+
+	.posted-date::before, .posted-date::after {
+		display: none !important;
+	}
+
+	.resume .timeline > li .timeline-panel {
+		float: none;
+
+	}
+
+	.resume .timeline > li .posted-date .month {
+		float: none;
+		text-align: left;
+		padding-top: 10px;
+	}
+
+	.resume .timeline > li {
+		border: 1px solid #eee;
+		border-bottom: 3px double #eee;
+		margin-bottom: 30px;
+	}
+
+	.resume .timeline > li .posted-date {
+		background-color: rgba(255, 255, 255, 0);
+		left: 0px;
+		padding-left: 20px;
+	}
+
+}
+
+@media only screen and (min-width : 310px) and (max-width : 479px) {
+
+	.hex {
+		margin-right: 20px;
+	}
+
+	.section-title {
+		font-size: 30px;
+	}
+
+}
+
+
+/* Landscape Mobile */
+@media only screen and (min-width : 480px) and (max-width : 767px) {
+	.intro h1 {
+		font-size: 60px;
+		line-height: 80px;
+	}
+	
+	.hex a {
+		line-height: 60px;
+	}
+	.social-icons ul{
+		margin-left: -5px;
+	}
+
+	.social-icons li{
+		padding:0 5px;
+	}
+
+	.social-icons a i{
+		margin:0 7px;
+	}
+
+	.mouse-icon{
+		display:none;
+	}
+
+	.navbar-custom .navbar-brand,
+	.navbar-custom .navbar-nav > li > a,
+	.navbar-custom .navbar-nav .dropdown-menu > li > a {
+		padding:10px 15px;
+	}
+
+	.navbar-custom .dropdown-menu{
+		margin-left: 20px;
+	}
+
+
+	/*resume*/
+	.resume:before,
+	.resume:after{
+		left:1px;
+	}
+
+	/*blog section*/
+	.blog-post-wrapper {
+		margin-bottom: 40px;
+	}
+	
+	/*contact section*/
+	.contact-form {
+		margin-bottom: 40px;
+	}
+
+	.contact-section .map-icon, 
+	.contact-section .mobile-icon {
+		float: none;
+	}
+	.center-xs {
+		text-align: center;
+	}
+
+}
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width : 768px) and (max-width : 991px) {
+	.navbar-custom .navbar-brand{
+		padding: 10px 15px;
+	}
+
+	.navbar-custom .navbar-nav > li > a, 
+	.navbar-custom .navbar-nav .dropdown-menu > li > a{
+		font-size: 12px;
+		padding: 15px;
+	}
+
+	/*resume*/
+	.resume:before,
+	.resume:after{
+		left:0px;
+	}
+
+	/*skill section*/
+	.skill-title h3 {
+		font-size: 14px;
+	}
+
+	/*blog section*/
+	.blog-post-wrapper {
+		margin-bottom: 40px;
+	}
+
+	.entry-meta ul li{
+		padding: 0 5px;
+	}
+
+	.center-xs {
+		text-align: left;
+	}
+
+}
+
+
+
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width : 992px) and (max-width : 1199px) {
+
+	.portfolio-item{
+		min-height: 150px;
+	}
+	.download-button a{
+		margin-right: 10px;
+	}
+
+}
